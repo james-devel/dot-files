@@ -1,0 +1,170 @@
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# Inserts a blank line between shell prompts
+add_newline = false
+
+format = """
+$time $battery $memory_usage $cmd_duration
+$python$directory
+$sudo$character
+"""
+
+[character]
+success_symbol = '[󰋇](bold bright-green)'
+error_symbol = '[󰋇](blink bold bright-red)'
+
+[sudo]
+style = 'bright-red'
+symbol = ' '
+disabled = false
+format = '[$symbol]($style)'
+
+[battery]
+disabled = false
+format = '[$symbol$percentage]($style)'
+
+[[battery.display]]
+threshold = 10
+style = 'bold red'
+discharging_symbol = '󰁺 '
+charging_symbol = '󰢜 '
+
+[[battery.display]]
+threshold = 25
+style = 'bold red'
+discharging_symbol = '󰁼 '
+charging_symbol = '󰂇 '
+
+[[battery.display]]
+threshold = 50
+style = 'bold yellow'
+discharging_symbol = '󰁾 '
+charging_symbol = '󰢝 '
+
+[[battery.display]]
+threshold = 75
+style = 'bold green'
+discharging_symbol = '󰂀 '
+charging_symbol = '󰢞 '
+
+[[battery.display]]
+threshold = 99
+style = 'bold green'
+discharging_symbol = '󰂂 '
+charging_symbol = '󰂋 '
+
+[[battery.display]]
+threshold = 100
+style = 'bold green'
+discharging_symbol = '󰁹 '
+charging_symbol = '󰂅 '
+
+[memory_usage]
+disabled = false
+format = '[$symbol $ram_pct:$swap_pct]($style)'
+threshold = -1
+symbol = ' '
+style = 'bold yellow'
+
+[time]
+disabled = false
+format = '[ $time]($style)'
+style = 'bold bright-cyan'
+time_format = '%I:%M:%S %p'
+use_12hr = true
+utc_time_offset = 'local'
+
+[cmd_duration]
+min_time = 0
+format = '[󱦟 $duration](bold bright-cyan)'
+show_milliseconds = true
+
+[directory]
+truncation_length = 2
+truncation_symbol = ''
+format = '[$read_only]($read_only_style)[$path]($style)'
+style = 'bright-purple'
+read_only = '(RO)'
+read_only_style = 'blink bright-red'
+
+[python]
+format = "[($virtualenv) ]($style)"
+style = "blink bold yellow"
+
+
+#$username\
+#$hostname\
+#$localip\
+#$shlvl\
+#$singularity\
+#$kubernetes\
+#$vcsh\
+#$fossil_branch\
+#$fossil_metrics\
+#$git_branch\
+#$git_commit\
+#$git_state\
+#$git_metrics\
+#$git_status\
+#$hg_branch\
+#$pijul_channel\
+#$docker_context\
+#$package\
+#$c\
+#$cmake\
+#$cobol\
+#$daml\
+#$dart\
+#$deno\
+#$dotnet\
+#$elixir\
+#$elm\
+#$erlang\
+#$fennel\
+#$gleam\
+#$golang\
+#$guix_shell\
+#$haskell\
+#$haxe\
+#$helm\
+#$java\
+#$julia\
+#$kotlin\
+#$gradle\
+#$lua\
+#$nim\
+#$nodejs\
+#$ocaml\
+#$opa\
+#$perl\
+#$php\
+#$pulumi\
+#$purescript\
+#$quarto\
+#$raku\
+#$rlang\
+#$red\
+#$ruby\
+#$rust\
+#$scala\
+#$solidity\
+#$swift\
+#$terraform\
+#$typst\
+#$vlang\
+#$vagrant\
+#$zig\
+#$buf\
+#$nix_shell\
+#$conda\
+#$meson\
+#$spack\
+#$aws\
+#$gcloud\
+#$openstack\
+#$azure\
+#$crystal\
+#$jobs\
+#$os\
+#$container\

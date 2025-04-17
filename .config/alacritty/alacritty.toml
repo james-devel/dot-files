@@ -1,0 +1,13 @@
+[window]
+padding.x = 0
+padding.y = 0
+
+[colors]
+primary.background = "#000000"
+
+[font]
+normal.family = "GeistMono Nerd Font"
+bold.family = "GeistMono Nerd Font"
+italic.family = "GeistMono Nerd Font"
+bold_italic.family = "GeistMono Nerd Font"
+size = 11.0
