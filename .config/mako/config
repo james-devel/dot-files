@@ -3,3 +3,4 @@ background-color=#000000FF
 text-color=#00FF00FF
 border-size=1
 border-color=#00FF00FF
+default-timeout=10000
