@@ -3,21 +3,27 @@
 <openbox_menu>
 <!-- Note: for localization support of menu items "client-menu" has to be removed here -->
 <menu id="client-menu">
+
   <item label="Minimize">
     <action name="Iconify" />
   </item>
+
   <item label="Maximize">
     <action name="ToggleMaximize" />
   </item>
+
   <item label="Fullscreen">
     <action name="ToggleFullscreen" />
   </item>
+
   <item label="Roll Up/Down">
     <action name="ToggleShade" />
   </item>
+
   <item label="Decorations">
     <action name="ToggleDecorations" />
   </item>
+
   <item label="Always on Top">
     <action name="ToggleAlwaysOnTop" />
   </item>
@@ -26,23 +32,31 @@
     if there is only a single workspace available.
   -->
   <menu id="workspaces" label="Workspace">
+
     <item label="Move Left">
       <action name="SendToDesktop" to="left" />
     </item>
+
     <item label="Move Right">
       <action name="SendToDesktop" to="right" />
     </item>
+
     <separator />
+
     <item label="Always on Visible Workspace">
       <action name="ToggleOmnipresent" />
     </item>
+
   </menu>
+
   <item label="Close">
     <action name="Close" />
   </item>
+
 </menu>
 
 <menu id="Browsers">
+
   <item label="Firefox(general)">
     <action name="Execute" command="firefox -P general" />
   </item>
@@ -63,6 +77,10 @@
     <action name="Execute" command="qutebrowser" />
   </item>
 
+  <item label="Falkon">
+    <action name="Execute" command="falkon" />
+  </item>
+
   <item label="Brave">
     <action name="Execute" command="brave-browser" />
   </item>
@@ -70,31 +88,33 @@
   <item label="Chromium">
     <action name="Execute" command="chromium" />
   </item>
+
 </menu>
 
 <menu id="Office">
+
   <item label="LibreOffice">
     <action name="Execute" command="libreoffice" />
   </item>
+
 </menu>
 
 <menu id="Tools">
+
   <item label="Tool one">
-    <action name="Execute" command="qterminal" />
+    <action name="Execute" command="kitty" />
   </item>
+
 </menu>
 
 <menu id="root-menu">
-  <item label="Brave">
-    <action name="Execute" command="brave-browser" />
-  </item>
 
   <item label="Firfox">
     <action name="Execute" command="firefox -P general" />
   </item>
 
-  <item label="QTerminal">
-    <action name="Execute" command="qterminal" />
+  <item label="Kitty">
+    <action name="Execute" command="Kitty" />
   </item>
 
   <separator/>
@@ -108,12 +128,15 @@
   <item label="Reconfigure">
     <action name="Reconfigure" />
   </item>
+
   <item label="Exit">
     <action name="Exit" />
   </item>
+
   <item label="Poweroff">
     <action name="Execute" command="systemctl -i poweroff" />
   </item>
+
 </menu>
 
 </openbox_menu>
