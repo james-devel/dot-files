@@ -120,7 +120,4 @@ fi
 export PATH="$PATH:~/.local/bin/"
 export MANPAGER="nvim +Man!"
 
-# Set cursor
-echo -e -n "\e[1 q"
-
 eval "$(starship init bash)"
