@@ -12,7 +12,7 @@ $sudo$character
 
 [character]
 success_symbol = '[󰋇](bold bright-green)'
-error_symbol = '[󰋇](blink bold bright-red)'
+error_symbol = '[󰋇](bold bright-red)'
 
 [sudo]
 style = 'bright-red'
@@ -86,11 +86,11 @@ truncation_symbol = ''
 format = '[$read_only]($read_only_style)[$path]($style)'
 style = 'bright-purple'
 read_only = '(RO)'
-read_only_style = 'blink bright-red'
+read_only_style = 'bright-red'
 
 [python]
 format = "[($virtualenv) ]($style)"
-style = "blink bold yellow"
+style = "bold yellow"
 
 
 #$username\

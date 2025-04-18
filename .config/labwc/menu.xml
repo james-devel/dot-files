@@ -42,16 +42,69 @@
   </item>
 </menu>
 
+<menu id="Browsers">
+  <item label="Firefox(general)">
+    <action name="Execute" command="firefox -P general" />
+  </item>
+
+  <item label="Firefox(proton)">
+    <action name="Execute" command="firefox -P proton" />
+  </item>
+
+  <item label="Firefox(finanace)">
+    <action name="Execute" command="firefox -P finance" />
+  </item>
+
+  <item label="Firefox(Profile Manager)">
+    <action name="Execute" command="firefox -P" />
+  </item>
+
+  <item label="Qutebrowser">
+    <action name="Execute" command="qutebrowser" />
+  </item>
+
+  <item label="Brave">
+    <action name="Execute" command="brave-browser" />
+  </item>
+
+  <item label="Chromium">
+    <action name="Execute" command="chromium" />
+  </item>
+</menu>
+
+<menu id="Office">
+  <item label="LibreOffice">
+    <action name="Execute" command="libreoffice" />
+  </item>
+</menu>
+
+<menu id="Tools">
+  <item label="Tool one">
+    <action name="Execute" command="qterminal" />
+  </item>
+</menu>
+
 <menu id="root-menu">
   <item label="Brave">
     <action name="Execute" command="brave-browser" />
   </item>
-  <item label="Chromium">
-    <action name="Execute" command="chromium" />
+
+  <item label="Firfox">
+    <action name="Execute" command="firefox -P general" />
   </item>
-  <item label="Terminal">
+
+  <item label="QTerminal">
     <action name="Execute" command="qterminal" />
   </item>
+
+  <separator/>
+
+  <menu id="Browsers"/>
+  <menu id="Office"/>
+  <menu id="Tools"/>
+
+  <separator/>
+
   <item label="Reconfigure">
     <action name="Reconfigure" />
   </item>

@@ -217,7 +217,7 @@
       <action name="NextWindow" />
     </keybind>
     <keybind key="A-Return">
-      <action name="Execute" command="qterminal" />
+      <action name="Execute" command="kitty" />
     </keybind>
     <keybind key="A-S-Return">
       <action name="Execute" command="fuzzel" />
